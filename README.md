@@ -98,35 +98,5 @@ The final challenge query was the most useful query because it gives a complete 
 
 
 
-\## BONUS: Indexes Added
 
-Indexes were added to improve query performance.
-
-
-
-1\. Index on Flight(Status)
-
-This index helps queries that filter flights by status, such as Scheduled, Delayed, Cancelled, or Completed.
-
-
-
-2\. Index on Booking(Flight\_ID)
-
-This index helps queries that join Booking with Flight and calculate total bookings or total revenue per flight.
-
-
-
-3\. Index on Passenger(National\_ID)
-
-This index is useful because National\_ID is unique and helps identify passengers quickly.
-
-
-
-4\. Composite Index on Flight(Origin\_Airport\_ID, Destination\_Airport\_ID)
-
-This index helps queries that search flights based on origin and destination airports.
-
-
-
-Indexes improve SELECT performance, but they can make INSERT, UPDATE, and DELETE slower because SQL Server must also update the indexes.
 
